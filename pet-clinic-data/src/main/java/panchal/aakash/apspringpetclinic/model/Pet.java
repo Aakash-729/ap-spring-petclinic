@@ -1,7 +1,6 @@
 package panchal.aakash.apspringpetclinic.model;
 
 import java.time.LocalDate;
-import java.util.Date;
 
 public class Pet {
 
