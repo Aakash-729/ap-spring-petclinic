@@ -14,7 +14,7 @@
     </parent>
     <groupId>panchal.aakash</groupId>
     <artifactId>ap-spring-petclinic</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2-SNAPSHOT</version>
     <name>ap-spring-petclinic</name>
     <description>AP Pet Clinic Project</description>
     <properties>
@@ -51,7 +51,7 @@
 
     <scm>
         <developerConnection>scm:git:git@github.com:Aakash-729/ap-spring-petclinic.git</developerConnection>
-      <tag>ap-spring-petclinic-0.0.1</tag>
+      <tag>HEAD</tag>
   </scm>
 
 </project>
