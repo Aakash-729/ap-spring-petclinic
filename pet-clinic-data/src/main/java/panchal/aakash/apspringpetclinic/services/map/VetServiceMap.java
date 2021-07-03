@@ -1,11 +1,13 @@
 package panchal.aakash.apspringpetclinic.services.map;
 
+import org.springframework.stereotype.Service;
 import panchal.aakash.apspringpetclinic.model.Vet;
-import panchal.aakash.apspringpetclinic.services.CrudService;
+import panchal.aakash.apspringpetclinic.services.VetService;
 
 import java.util.Set;
 
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+@Service
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
     @Override
     public Vet findById(Long id) {

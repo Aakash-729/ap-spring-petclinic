@@ -1,10 +1,14 @@
 package panchal.aakash.apspringpetclinic.services.map;
 
+import org.springframework.context.annotation.Profile;
+import org.springframework.stereotype.Service;
+
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
+//@Service
 public abstract class AbstractMapService <T, ID> {
 
     protected Map<ID, T> map = new HashMap<>();
