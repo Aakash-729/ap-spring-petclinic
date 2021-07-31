@@ -28,15 +28,17 @@
 
     <table>
         <thead>
+        <tr>
             <th >Id</th>
             <th>First Name</th>
             <th>Last Name</th>
+        <tr>
         </thead>
         <tbody>
             <tr th:each = "owner: ${owners}">
-                <td th:text = "${owner.getId()}">Error Text</td>
-                <td th:text = "${owner.getFirstName()}">Error Text</td>
-                <td th:text = "${owner.getLastName()}">Error Text</td>
+                <td th:text = "${owner.getId()}">1</td>
+                <td th:text = "${owner.getFirstName()}">Jerry</td>
+                <td th:text = "${owner.getLastName()}">Johnson</td>
             </tr>
         </tbody>
     </table>

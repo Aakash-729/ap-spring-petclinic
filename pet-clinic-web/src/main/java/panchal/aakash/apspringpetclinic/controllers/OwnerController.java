@@ -18,24 +18,15 @@ import java.util.Map;
 @RequestMapping("/owners")
 public class OwnerController {
 
-    private OwnerService ownerService;
+    private final OwnerService ownerService;
 
-    public OwnerController(OwnerServiceMap ownerService) {
+    public OwnerController(OwnerService ownerService) {
         this.ownerService = ownerService;
     }
 
     @GetMapping({"", "/", "index", "index.html"})
     public String listOwners(Model model) {
-        System.out.println("OwnerService: "+ ownerService);
-        List<Owner> ownerList = new ArrayList<>(ownerService.findAll());
-
-        System.out.println("Printing the saved Owners....");
-        for (Owner owner : ownerList){
-            System.out.println("Owner id: "+ owner.getId() + " firstName: "+
-                    owner.getFirstName()+ " lastName: "+ owner.getLastName());
-        }
-        System.out.println("--------------------------------------------");
-        model.addAttribute("owners", ownerList);
+        model.addAttribute("owners", ownerService.findAll());
         return "owners/index";
     }
 }
